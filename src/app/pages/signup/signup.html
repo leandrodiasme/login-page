@@ -1,0 +1,26 @@
+<app-default-login-layout 
+  title="Create an account" 
+  primaryBtnText="Signup now" 
+  secondaryBtnText="Login now" 
+  (send)="send()" 
+  (navigate)="navigate()" 
+  [disabledPrimaryBtn]="!signupForm.valid"
+>
+  <form [formGroup]="signupForm">
+    <app-primary-input formControlName="name" inputName="name" type="text" label="Name" placeholder="Joghn Doe">
+      <img src="../../../assets/email-icon.svg"/>
+    </app-primary-input>
+
+    <app-primary-input formControlName="email" inputName="email" type="email" label="Email" placeholder="johndoe@email.com">
+      <img src="../../../assets/email-icon.svg"/>
+    </app-primary-input>
+
+    <app-primary-input formControlName="password" inputName="senha" type="password" label="Password">
+      <img src="../../../assets/password-icon.svg"/>
+    </app-primary-input>
+
+    <app-primary-input formControlName="passwordConfirm" inputName="passwordConfirm" type="password" label="Confirm password">
+      <img src="../../../assets/password-icon.svg"/>
+    </app-primary-input>
+  </form>
+</app-default-login-layout>
