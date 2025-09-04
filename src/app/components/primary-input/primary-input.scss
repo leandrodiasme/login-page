@@ -1,0 +1,37 @@
+@import "../../../styles/variables.scss";
+
+.input-wrapper {
+  width: 100%;
+
+    label{
+        margin-bottom: 10px;
+    }
+
+  .input-content {
+    display: flex;
+    align-items: center;
+    width: 100%; // garante que vai até a borda da form-section
+    background-color: $gray-secondary-bg;
+    border-radius: 8px;
+    overflow: hidden;
+
+    input {
+      flex: 1;
+      min-width: 0; // evita quebra
+      border: none;
+      background: transparent;
+      padding: 14px 10px;
+      font-size: 16px;
+      color: $text-color;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary-color;
+      padding: 14px;
+    }
+  }
+}
+
